@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Metadatos sociales -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://localhost:3000/include/JetEngine.jpg">
+  <meta name="og:image" content="https://localhost:3000/include/JetEngine.jpg">
+  <meta name="og:image:width" content="1080">
+  <meta name="og:image:height" content="1080">
+
+  <meta name="og:title" content="Eisenholz">
+  <meta name="description" content="Showcase your product interactively">
+  <meta name="og:description" content="Showcase your product interactively">
+
+  <!-- Versión Unity + Needle -->
+  <meta name="generator" content="Unity 2022.3.62f1, Needle Engine Integration @4.8.4">
+  <meta name="needle-engine" content="4.8.4">
+  <meta name="needle:buildtime" content="2025-08-23T16:03:04.683Z">
+
+  <meta charset="UTF-8" />
+  <link rel="icon" href="./assets/favicon.8d99ceea.ico">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+
+  <title>Eisenholz</title>
+
+  <!-- Fuente Roboto -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- SEO -->
+  <meta name="robots" content="index,follow">
+  <meta name="url" content="https://localhost:3000">
+
+  <!-- Preloads de motores y modelo 3D -->
+  <link rel="modulepreload" as="script" href="./assets/three@0.169.7.js">
+  <link rel="modulepreload" as="script" href="./assets/needle-engine@4.8.4.js">
+  <link rel="preload" as="fetch" href="./assets/JetEngine.glb?v=1755964973391" type="model/gltf+json" crossorigin>
+
+  <!-- Scripts principales -->
+  <script type="module" crossorigin src="./assets/index-0d12289a.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/three@0.169.7.js">
+  <link rel="modulepreload" crossorigin href="./assets/three-examples.3648dafa.js">
+  <link rel="modulepreload" crossorigin href="./assets/gltf-progressive.dfeff810.js">
+  <link rel="stylesheet" href="./assets/index.7f6e353c.css">
+
+  <!-- Estilos adicionales -->
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+
+    /* Contenedor del logo */
+    #logo-container {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(105, 104, 104, 0.7);
+      padding: 10px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+      backdrop-filter: blur(8px);
+      z-index: 10;
+    }
+
+    #logo-container img {
+      max-width: 150px;
+      height: auto;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <script>
+    /* needle: fix for peerjs */
+    window.global = window;
+    var parcelRequire;
+  </script>
+
+  <!-- Escena 3D -->
+  <needle-engine></needle-engine>
+
+  <!-- Logo -->
+  <div id="logo-container">
+    <img src="/eisenholzlogo.png" alt="Eisenholz">
+  </div>
+
+</body>
+</html>
